@@ -102,6 +102,19 @@ From a B2C perspective, micro, real-time betting could be a market worth explori
 
 ---
 
+## Results
+
+(Jake's report and summary)
+
+(Noah's report and summary)
+
+---
+
+## Presentation
+
+
+---
+
 ## Contributors
 
 [Brittanie Polasek](https://www.linkedin.com/in/brittanie-polasek/), [Rishi Prasadha](https://www.linkedin.com/in/rishi-prasadha-912212133/), Noah Saleh, Jake Wheeler
