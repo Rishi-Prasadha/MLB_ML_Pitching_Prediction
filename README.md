@@ -102,6 +102,9 @@ The objective of these models is to see how machine learning can help teams prep
 
 From a B2C perspective, micro, real-time betting could be a market worth exploring. With betting on outcome of games and general actions and occurrences throughout the game already mainstream, the ability to bet in real time on small occurrences in a game might be an unexplored market. 
 
+In order to use the models in Jake's folder navagate to Part 2 of the notebook. This is where you can change the link to your own Verlander CSV file for any game(s). Usage instructions for editing the models is also including in the notebook is you wish to do so.
+
+<img width="1292" alt="Screen Shot 2022-09-29 at 5 17 27 PM" src="https://user-images.githubusercontent.com/106558893/193152732-2d00959b-349c-4f15-b16b-6a8998e8474f.png">
 ---
 
 ## Results
