@@ -106,7 +106,7 @@ From a B2C perspective, micro, real-time betting could be a market worth explori
 
 ## Results
 
-(Jake's report and summary)
+There are 7 models in the Jake folder of this project. Two are random forest models, one is a combination of the two random forest models, and four are SVM models. The combination of random forest models achieved the highest accuracy during model validation at 53%. The combination model also had relatively balanced f1 scores for SL, CU, and FF pitch types. However, during the live testing of the Verlander game on 9/23/22 the Poly SVM model had the best results. This could be do to variance with one game being a small sample size. More testing of the models is required to make any definitive conclusions. 
 
 (Noah's report and summary)
 
