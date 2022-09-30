@@ -1,6 +1,6 @@
 # MLB_ML_Pitching_Prediction
 
- What if we told you the 2017 Astros had a way to get their pitching data legitimately? Batters are allowed to be coached with signals mid-game, but teams aren't allowed to use a camera to see the catchers signals to inform this mid-game coaching (*cough cough*). So in theory, machine learning models could be used to legitimately help the astros predict pitches. With technology companies everywhere implementing machine learning, it is only a matter of time before sports teams harness this power for their own teams' performance. Using the scikit-learn and keras libraries, we explore Decision Tree, Random Forest, Neural Network and SVM models to see which will be the most effective in predicting Justin Verlander's next pitch, in real time. 
+ What if we told you the 2017 Astros had a way to get their pitching data legitimately? Batters are allowed to be coached with signals mid-game, but teams aren't allowed to use a camera to steal the catchers signals to inform this mid-game coaching (*cough cough*). So in theory, machine learning models could be used to legitimately help the astros predict pitches. With technology companies everywhere implementing machine learning, it is only a matter of time before sports teams harness this power for their own teams' performance. Using the scikit-learn and keras libraries, we explore Decision Tree, Random Forest, Neural Network and SVM models to see which will be the most effective in predicting Justin Verlander's next pitch, in real time. In the end, our best model was 59% accurate at predicting Verlander's next pitch.
 
 ---
 
@@ -98,12 +98,14 @@ To install Scikit-Learn go to your terminal and run the following command:
 
 ## Database 
 
-All the data used was sourced and downloaded from [Baseball Savant](https://baseballsavant.mlb.com). Thank you to Baseball Savant for providing reliable, accurate player, team and game statistics after each game. 
+All the data used was sourced and downloaded from [Baseball Savant](https://baseballsavant.mlb.com). Thank you to Baseball Savant for providing reliable, accurate player, team, and game statistics after each game. 
 
 With that being said, the Justin Verlander dataset used is found in the resources folder, including the September 29th game data: 
 
 * verlander_update.csv
 * field_test_data.csv
+
+*more_data.csv (This was the csv used by Noah's 59% accurate model. It contains 5 years of data instead of just 1 like the verlander_update.csv contains. Though, Noah only ended up using 1 year of data from the more_data.csv file because Verlander was injured for the 2020 & 2021 seasons, and the 2018 & 2019 data were too out-of-date to improve the model. So Noah essentially used the same data as everyone else.)
 
 ---
 
@@ -113,7 +115,7 @@ The objective of these models is to see how machine learning can help teams prep
 
 From a B2C perspective, micro, real-time betting could be a market worth exploring. With betting on outcome of games and general actions and occurrences throughout the game already mainstream, the ability to bet in real time on small occurrences in a game might be an unexplored market. 
 
-In order to use the models in Jake's folder navagate to Part 2 of the notebook. This is where you can change the link to your own Verlander CSV file for any game(s). Usage instructions for editing the models is also including in the notebook is you wish to do so.
+In order to use the models in Jake's folder navagate to Part 2 of the notebook. This is where you can change the link to your own Verlander CSV file for any game(s). Usage instructions for editing the models is also included in the notebook if you wish to do so.
 
 <img width="1292" alt="Screen Shot 2022-09-29 at 5 17 27 PM" src="https://user-images.githubusercontent.com/106558893/193152732-2d00959b-349c-4f15-b16b-6a8998e8474f.png">
 ---
@@ -122,7 +124,7 @@ In order to use the models in Jake's folder navagate to Part 2 of the notebook. 
 
 There are 7 models in the Jake folder of this project. Two are random forest models, one is a combination of the two random forest models, and four are SVM models. The combination of random forest models achieved the highest accuracy during model validation at 53%. The combination model also had relatively balanced f1 scores for SL, CU, and FF pitch types. However, during the live testing of the Verlander game on 9/23/22 the Poly SVM model had the best results out of all of Jake's models. This could be do to variance with one game being a small sample size. More testing of the models is required to make any definitive conclusions. 
 
-In Noah's folder, you'll find 5 of his models. Each next model gradually improved over the previous as Noah tweaked his code. Noah's final model ended up being the best with an accuracy of 59%. However, during the live testing of the Verlander game on 9/23/22, it only achieved a 54% accuracy. His model must have had an "off" day. Noah's model is thought to be the best because he borrowed feature engineering from the other group members' models and added some of his own, giving his model the most features engineered. Some of the engineered features his model had were "count", "bases", "pitch_count", and "score_diff". "Count" combined the strikes and balls columns. Noah listed out all the possible counts (so like 3-2 3-1, 3-0, 2-2, etc...) and labelled them with a rank of how good they were for the batter. So 1st place was 3-0 and last place was 0-2. Noah did similiar engineering to combine the "on_1b", "on_2b", and "on_3b" columns into the "bases" column. The "pitch count" column is a count of how many pitches the pitcher had thrown that day. So it's basically a measure of how soar the pitcher's arm was. Lastly, the "score_diff" column combined the 2 columns that gave the scores of the 2 teams that were playing by simply taking the difference between their scores.
+In Noah's folder, you'll find 5 of his random forest models. Each next model gradually improved over the previous as Noah tweaked his code. Noah's final model ended up being the best with an accuracy of 59%. However, during the live testing of the Verlander game on 9/23/22, it only achieved a 54% accuracy. His model must have had an "off" day. Noah's model is thought to be the best because he borrowed feature engineering from the other group members' models and added some of his own, giving his model the most features engineered. Some of the engineered features his model had were "count", "bases", "pitch_count", and "score_diff". "Count" combined the strikes and balls columns. Noah listed out all the possible counts (so like 3-2 3-1, 3-0, 2-2, etc...) and labelled them with a rank of how good they were for the batter. So 1st place was 3-0 and last place was 0-2. Noah did similiar engineering to combine the "on_1b", "on_2b", and "on_3b" columns into the "bases" column. The "pitch count" column is a count of how many pitches the pitcher had thrown that day. So it's basically a measure of how soar the pitcher's arm was. Lastly, the "score_diff" column combined the 2 columns that gave the scores of the 2 teams that were playing by simply taking the difference between their scores.
 
 For the neural network model, the 1st model with 100 epochs and the adam optimizer performed the best with the training and validation data as shown below: 
 
