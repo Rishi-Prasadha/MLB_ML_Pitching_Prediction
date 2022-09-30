@@ -117,6 +117,7 @@ There are 7 models in the Jake folder of this project. Two are random forest mod
 
 ## Presentation
 
+[Here is a link to our presentation!](https://docs.google.com/presentation/d/1tEwB8D-ivI-Zd0uTVI24HkBLhJh_i9LuMLjrsyOQh1k/edit?usp=sharing)
 
 ---
 
