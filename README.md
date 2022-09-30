@@ -36,6 +36,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from keras.utils import np_utils
+from lime import lime_tabular
 %matplotlib inline
 ```
 For the Decision Tree and Random Forest models import the following: 
@@ -90,9 +91,10 @@ To install Scikit-Learn go to your terminal and run the following command:
 
 All the data used was sourced and downloaded from [Baseball Savant](https://baseballsavant.mlb.com). Thank you to Baseball Savant for providing reliable, accurate player, team and game statistics after each game. 
 
-With that being said, the Justin Verlander dataset used is found in the resources folder: 
+With that being said, the Justin Verlander dataset used is found in the resources folder, including the September 29th game data: 
 
 * verlander_update.csv
+* field_test_data.csv
 
 ---
 
@@ -112,6 +114,20 @@ In order to use the models in Jake's folder navagate to Part 2 of the notebook. 
 There are 7 models in the Jake folder of this project. Two are random forest models, one is a combination of the two random forest models, and four are SVM models. The combination of random forest models achieved the highest accuracy during model validation at 53%. The combination model also had relatively balanced f1 scores for SL, CU, and FF pitch types. However, during the live testing of the Verlander game on 9/23/22 the Poly SVM model had the best results. This could be do to variance with one game being a small sample size. More testing of the models is required to make any definitive conclusions. 
 
 (Noah's report and summary)
+
+For the neural network model, the 1st model with 100 epochs and the adam optimizer performed the best with the training and validation data as shown below: 
+
+
+
+Using the Lime library, the neural network's feature importance could be extracted for an instance in the validation data. Below is the feature importance for what most likely correlates with Justin Verlander throwing a curveball. As we can see a 3-0, 2-1 and 3-1 count has the highest correlation with a curveball being thrown:
+
+
+
+After the September 29, 2022 game, the models were tested on game data. Surprisingly, the non-adaptive SGD model performed the best at 48.5% accuracy, while the adam model performed at 42.6% accuracy. But after further analysis, the SGD model only predicted fastballs and has that accuracy value because Justin Verlander throws ~50% fastballs in an outing. 
+
+
+
+
 
 ---
 
