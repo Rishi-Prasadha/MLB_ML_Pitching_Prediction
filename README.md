@@ -133,6 +133,7 @@ After the September 29, 2022 game, the models were tested on game data. Surprisi
 
 ## Presentation
 
+[Here is a link to our presentation!](https://docs.google.com/presentation/d/1tEwB8D-ivI-Zd0uTVI24HkBLhJh_i9LuMLjrsyOQh1k/edit?usp=sharing)
 
 ---
 
