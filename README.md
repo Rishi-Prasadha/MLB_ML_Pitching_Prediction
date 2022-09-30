@@ -105,7 +105,7 @@ With that being said, the Justin Verlander dataset used is found in the resource
 * verlander_update.csv
 * field_test_data.csv
 
-*more_data.csv (This was the csv used by Noah's 59% accurate model. It contains 5 years of data instead of just 1 like the verlander_update.csv contains. Though, Noah only ended up using 1 year of data from the more_data.csv file because Verlander was injured for the 2020 & 2021 seasons, and the 2018 & 2019 data were too out-of-date to improve the model. So Noah essentially used the same data as everyone else.)
+* more_data.csv (This was the csv used by Noah's 59% accurate model. It contains 5 years of data instead of just 1 like the verlander_update.csv contains. Though, Noah only ended up using 1 year of data from the more_data.csv file because Verlander was injured for the 2020 & 2021 seasons, and the 2018 & 2019 data were too out-of-date to improve the model. So Noah essentially used the same data as everyone else.)
 
 ---
 
