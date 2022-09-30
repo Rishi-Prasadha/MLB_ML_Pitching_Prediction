@@ -117,15 +117,16 @@ There are 7 models in the Jake folder of this project. Two are random forest mod
 
 For the neural network model, the 1st model with 100 epochs and the adam optimizer performed the best with the training and validation data as shown below: 
 
-
+<img width="775" alt="Screen Shot 2022-09-29 at 20 42 00" src="https://user-images.githubusercontent.com/107497500/193174536-df6d0c03-65a8-4b27-bc4b-50d711a845f5.png">
 
 Using the Lime library, the neural network's feature importance could be extracted for an instance in the validation data. Below is the feature importance for what most likely correlates with Justin Verlander throwing a curveball. As we can see a 3-0, 2-1 and 3-1 count has the highest correlation with a curveball being thrown:
 
-
+<img width="565" alt="Screen Shot 2022-09-29 at 18 30 26" src="https://user-images.githubusercontent.com/107497500/193174503-180b587b-5bb9-46bf-9370-1dea508e0007.png">
 
 After the September 29, 2022 game, the models were tested on game data. Surprisingly, the non-adaptive SGD model performed the best at 48.5% accuracy, while the adam model performed at 42.6% accuracy. But after further analysis, the SGD model only predicted fastballs and has that accuracy value because Justin Verlander throws ~50% fastballs in an outing. 
 
 
+<img width="893" alt="Screen Shot 2022-09-29 at 20 42 19" src="https://user-images.githubusercontent.com/107497500/193174525-4ae8a384-5d52-47d1-adee-a8fc697b9534.png">
 
 
 
