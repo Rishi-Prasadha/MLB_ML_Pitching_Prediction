@@ -1,4 +1,4 @@
-# MLB_ML_Pitching_Prediction
+# Predicting Justin Verlander's Next Pitch
 
  What if we told you the 2017 Astros had a way to get their pitching data legitimately? Batters are allowed to be coached with signals mid-game, but teams aren't allowed to use a camera to steal the catchers signals to inform this mid-game coaching (*cough cough*). So in theory, machine learning models could be used to legitimately help the Astros predict pitches. With technology companies everywhere implementing machine learning, it is only a matter of time before sports teams harness this power for their own teams' performance. Using the scikit-learn and keras libraries, we explore Decision Tree, Random Forest, Neural Network and SVM models to see which will be the most effective in predicting Justin Verlander's next pitch, in real time. In the end, our best model was 59% accurate on average and was 54% accurate using the game against the Arizona Diamondbacks on September 28, 2022 as a test set.
 
